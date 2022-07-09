@@ -15,12 +15,29 @@ function Landing() {
             marginTop: "2vh",
           }}
         >
-          Resume Builder
+          <Link to="/" style={{ color: "darkblue", textDecoration: "none" }}>
+            Resume Builder
+          </Link>
         </Typography>
         <Box className="head">
-          <Button sx={{ color: "white" }}>Build</Button>
-          <Button sx={{ color: "white" }}>Build</Button>
-          <Button sx={{ color: "white" }}>Build</Button>
+          <Button sx={{ color: "white" }}>
+            <Link to="/user" style={{ color: "white", textDecoration: "none" }}>
+              Build
+            </Link>
+          </Button>
+          <Button sx={{ color: "white" }}>
+            <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+              Home
+            </Link>
+          </Button>
+          <Button sx={{ color: "white" }}>
+            <a
+              href="https://github.com/nandakumarbm26"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Contact
+            </a>
+          </Button>
         </Box>
       </div>
       <Grid container sx={{ height: "80vh", width: "100vw" }}>
@@ -43,11 +60,23 @@ function Landing() {
             type="button"
             style={{ fontSize: "25px", color: "teal" }}
           >
-            <Link to="/user">Get Started</Link>
+            <Link to="/user" style={{ color: "white", textDecoration: "none" }}>
+              Get Started
+            </Link>
           </button>
         </Grid>
       </Grid>
-      <div style={{ height: "10vh", backgroundColor: "black" }}></div>
+      <div
+        style={{
+          height: "10vh",
+          backgroundColor: "black",
+          textAlign: "center",
+          color: "gray",
+        }}
+      >
+        <p> &#169; copyrights reserved</p>
+        <h6>designed and developed by nanda kumar b m</h6>
+      </div>
     </div>
   );
 }
